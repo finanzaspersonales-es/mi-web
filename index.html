@@ -3,8 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Hipoteca España 2026 | Simula tu Cuota Mensual</title>
-    <meta name="description" content="Calcula tu hipoteca en España gratis. Descubre tu cuota mensual, intereses y ahorro total. Comparador actualizado 2026 con todos los bancos.">
+
+    <!-- SEO Principal -->
+    <title>Calculadora de Hipoteca en España (2026) | Simula tu Cuota Mensual</title>
+    <meta name="description" content="Calcula tu hipoteca en España gratis. Descubre tu cuota mensual, intereses totales y cuánto pagarás en total. Simulador actualizado 2026 con fórmula bancaria oficial.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Finanzas Personales España">
+    <link rel="canonical" href="https://finanzaspersonales-es.github.io/mi-web/">
+
+    <!-- Open Graph (para compartir en redes sociales) -->
+    <meta property="og:title" content="Calculadora de Hipoteca en España (2026)">
+    <meta property="og:description" content="Simula tu hipoteca gratis y descubre cuánto pagarás realmente. Fórmula bancaria oficial.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://finanzaspersonales-es.github.io/mi-web/">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Calculadora de Hipoteca en España (2026)">
+    <meta name="twitter:description" content="Simula tu hipoteca gratis y descubre cuánto pagarás realmente.">
+
+    <!-- Schema: WebApplication (para la calculadora) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculadora de Hipoteca España",
+      "url": "https://finanzaspersonales-es.github.io/mi-web/",
+      "description": "Calculadora gratuita para simular hipotecas en España. Calcula cuota mensual, intereses totales y desglose completo.",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      },
+      "inLanguage": "es"
+    }
+    </script>
+
+    <!-- Schema: FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué interés es bueno para una hipoteca en España en 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En 2026, un interés fijo entre el 2,5% y el 3,5% se considera competitivo en España. Para hipotecas variables, el euríbor más un diferencial inferior al 1% es una buena referencia. Siempre compara al menos 3 entidades antes de firmar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto pagaré al mes por una hipoteca de 150.000€?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Una hipoteca de 150.000€ a 25 años con un interés del 3% supone una cuota mensual de aproximadamente 711€. Con un 3,5% serían unos 750€/mes. Usa nuestra calculadora para obtener el dato exacto según tus condiciones."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánta entrada necesito para una hipoteca?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Los bancos en España financian hasta el 80% del valor de tasación, por lo que necesitarás al menos un 20% de entrada más un 10-12% adicional para gastos de notaría, impuestos y gestoría. En total, conviene tener entre el 30% y el 35% del precio de la vivienda ahorrado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Es mejor una hipoteca fija o variable en 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende de tu perfil. La hipoteca fija ofrece seguridad: sabes exactamente lo que pagarás siempre. La variable puede ser más barata inicialmente pero fluctúa con el euríbor. En 2026, con el euríbor relativamente estabilizado, muchos expertos recomiendan la fija para plazos largos."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -528,6 +608,76 @@
             letter-spacing: 0.5px;
         }
 
+        .faq-section {
+            padding: 80px 20px;
+            background: white;
+        }
+
+        .faq-grid {
+            max-width: 800px;
+            margin: 50px auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .faq-item {
+            border: 2px solid #e1e8ed;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: border-color 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: var(--accent);
+        }
+
+        .faq-question {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 28px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-align: left;
+            gap: 16px;
+        }
+
+        .faq-icon {
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: var(--accent);
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+            line-height: 1;
+        }
+
+        .faq-item.open .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 0 28px 22px;
+            color: var(--text-light);
+            line-height: 1.7;
+            font-size: 0.98rem;
+        }
+
+        .faq-answer strong {
+            color: var(--text);
+        }
+
+        .faq-item.open .faq-answer {
+            display: block;
+        }
+
         @media (max-width: 768px) {
             .calculator {
                 padding: 30px 20px;
@@ -686,6 +836,55 @@
         </div>
     </div>
 
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Preguntas Frecuentes sobre Hipotecas</h2>
+            <p class="section-subtitle">Las dudas más comunes resueltas antes de firmar</p>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿Qué interés es bueno para una hipoteca en España en 2026?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>En 2026, un interés fijo entre el <strong>2,5% y el 3,5%</strong> se considera competitivo. Para hipotecas variables, el euríbor más un diferencial inferior al 1% es una buena referencia. Siempre compara al menos 3 entidades antes de firmar.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿Cuánto pagaré al mes por una hipoteca de 150.000€?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Una hipoteca de 150.000€ a 25 años con un interés del 3% supone una cuota mensual de aproximadamente <strong>711€</strong>. Con un 3,5% serían unos 750€/mes. Usa la calculadora de arriba para obtener el dato exacto según tus condiciones.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿Cuánta entrada necesito para una hipoteca?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Los bancos en España financian hasta el <strong>80% del valor de tasación</strong>, por lo que necesitarás al menos un 20% de entrada. Además, hay que sumar un 10-12% para gastos de notaría, impuestos y gestoría. En total, conviene tener entre el <strong>30% y el 35%</strong> del precio ahorrado.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿Es mejor una hipoteca fija o variable en 2026?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Depende de tu perfil. La <strong>hipoteca fija</strong> ofrece seguridad total: sabes exactamente lo que pagarás siempre. La <strong>variable</strong> puede ser más barata inicialmente pero fluctúa con el euríbor. Con el euríbor estabilizado en 2026, muchos expertos recomiendan la fija para plazos largos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="articles-section">
         <div class="container">
             <h2 class="section-title">Guías de Ahorro e Inversión</h2>
@@ -836,6 +1035,14 @@
             resultsDiv.classList.add('show');
             resultsDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         });
+
+        // FAQ Acordeón
+        function toggleFaq(btn) {
+            const item = btn.parentElement;
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+            if (!isOpen) item.classList.add('open');
+        }
 
         // Calcular automáticamente al cargar la página
         window.addEventListener('load', () => {
