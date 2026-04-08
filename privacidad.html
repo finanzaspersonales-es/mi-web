@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad | Finanzas Personales España</title>
+    <meta name="description" content="Política de privacidad de Finanzas Personales España. Cómo tratamos tus datos personales conforme al RGPD.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://finanzaspersonales-es.github.io/mi-web/privacidad.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a1a2e;
+            --secondary: #0f3460;
+            --accent: #e94560;
+            --gold: #d4af37;
+            --text: #2d3436;
+            --text-light: #636e72;
+            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Work Sans', sans-serif;
+            color: var(--text);
+            background: linear-gradient(to bottom, #ffffff 0%, #f1f3f4 100%);
+            line-height: 1.6;
+        }
+        .hero {
+            background: var(--gradient);
+            padding: 60px 20px 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .container { max-width: 860px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 1; }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            font-weight: 900;
+            color: white;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .hero-sub { color: rgba(255,255,255,0.85); text-align: center; font-size: 1.05rem; }
+        .breadcrumb {
+            text-align: center;
+            margin-top: 16px;
+        }
+        .breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb a:hover { color: white; }
+        .breadcrumb span { color: rgba(255,255,255,0.5); margin: 0 8px; }
+
+        .content-wrapper {
+            background: white;
+            border-radius: 24px;
+            padding: 50px 60px;
+            box-shadow: var(--shadow);
+            margin: -40px auto 60px;
+            max-width: 860px;
+        }
+        .last-updated {
+            display: inline-block;
+            background: #f0f4ff;
+            color: var(--secondary);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin: 40px 0 14px;
+            padding-left: 16px;
+            border-left: 4px solid var(--accent);
+        }
+        h2:first-of-type { margin-top: 10px; }
+        p { color: var(--text-light); margin-bottom: 14px; font-size: 0.98rem; }
+        ul { color: var(--text-light); padding-left: 22px; margin-bottom: 14px; font-size: 0.98rem; }
+        li { margin-bottom: 8px; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        strong { color: var(--text); }
+
+        .highlight-box {
+            background: #f8f9ff;
+            border: 1px solid #e0e7ff;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 20px 0;
+        }
+        .highlight-box p { margin: 0; }
+
+        nav.topnav {
+            background: var(--primary);
+            padding: 16px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-logo { font-family: 'Playfair Display', serif; color: white; font-weight: 700; font-size: 1.1rem; text-decoration: none; }
+        .nav-back { color: rgba(255,255,255,0.75); font-size: 0.9rem; text-decoration: none; transition: color 0.2s; }
+        .nav-back:hover { color: white; text-decoration: none; }
+
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 40px 20px 30px;
+            text-align: center;
+        }
+        .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin: 16px 0; }
+        .footer-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+        .footer-links a:hover { color: white; }
+        .footer-copy { font-size: 0.9rem; opacity: 0.7; }
+        .footer-disclaimer { font-size: 0.8rem; opacity: 0.5; margin-top: 12px; }
+
+        @media (max-width: 768px) {
+            .content-wrapper { padding: 32px 24px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="topnav">
+    <a href="index.html" class="nav-logo">🏦 Finanzas Personales ES</a>
+    <a href="index.html" class="nav-back">← Volver al inicio</a>
+</nav>
+
+<div class="hero">
+    <div class="container">
+        <h1>Política de Privacidad</h1>
+        <p class="hero-sub">Cómo tratamos y protegemos tu información</p>
+        <div class="breadcrumb">
+            <a href="index.html">Inicio</a>
+            <span>/</span>
+            <span style="color:rgba(255,255,255,0.85)">Privacidad</span>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="content-wrapper">
+        <span class="last-updated">📅 Última actualización: abril de 2026</span>
+
+        <div class="highlight-box">
+            <p>En <strong>Finanzas Personales España</strong> nos tomamos muy en serio tu privacidad. Esta política explica de forma clara qué datos recogemos, para qué los usamos y cuáles son tus derechos conforme al <strong>Reglamento General de Protección de Datos (RGPD)</strong> y la normativa española vigente.</p>
+        </div>
+
+        <h2>1. Responsable del tratamiento</h2>
+        <p><strong>Nombre del sitio web:</strong> Finanzas Personales España</p>
+        <p><strong>URL:</strong> https://finanzaspersonales-es.github.io/mi-web/</p>
+        <p><strong>Correo de contacto:</strong> <a href="mailto:contacto@finanzaspersonales-es.com">contacto@finanzaspersonales-es.com</a></p>
+
+        <h2>2. Datos que recogemos</h2>
+        <p>Este sitio web <strong>no recoge datos personales directamente</strong>. No hay formularios de registro ni de suscripción. Sin embargo, se pueden recoger datos de forma indirecta a través de los servicios de terceros que utilizamos:</p>
+        <ul>
+            <li><strong>Google Analytics:</strong> registra datos anónimos de navegación como páginas visitadas, tiempo de permanencia, dispositivo utilizado y ubicación geográfica aproximada.</li>
+            <li><strong>Google AdSense:</strong> utiliza cookies para mostrar anuncios personalizados basados en tus intereses y tu historial de navegación.</li>
+        </ul>
+        <p>La calculadora de hipotecas realiza todos sus cálculos <strong>en tu propio navegador</strong>. Los datos que introduces (precio de la vivienda, entrada, plazo, etc.) nunca se envían a ningún servidor.</p>
+
+        <h2>3. Finalidad y base legal del tratamiento</h2>
+        <ul>
+            <li><strong>Analytics:</strong> análisis estadístico del uso del sitio para mejorarlo. Base legal: interés legítimo y consentimiento.</li>
+            <li><strong>Publicidad:</strong> mostrar anuncios relevantes para financiar el servicio gratuito. Base legal: consentimiento.</li>
+        </ul>
+
+        <h2>4. Cookies</h2>
+        <p>Este sitio utiliza cookies propias y de terceros. Puedes consultar el detalle completo en nuestra <a href="cookies.html">Política de Cookies</a>. Al continuar navegando, aceptas el uso de cookies conforme a nuestra política.</p>
+
+        <h2>5. Transferencias internacionales</h2>
+        <p>Google Analytics y Google AdSense son servicios de Google LLC, con sede en EE.UU. Google está adherido a las garantías adecuadas de transferencia internacional conforme al RGPD (cláusulas contractuales tipo y el marco UE-EE.UU.).</p>
+
+        <h2>6. Conservación de datos</h2>
+        <p>Los datos de analítica se conservan durante un máximo de <strong>26 meses</strong> en Google Analytics, conforme a la configuración estándar del servicio.</p>
+
+        <h2>7. Tus derechos</h2>
+        <p>En virtud del RGPD, tienes derecho a:</p>
+        <ul>
+            <li><strong>Acceso:</strong> conocer qué datos tuyos tratamos.</li>
+            <li><strong>Rectificación:</strong> corregir datos inexactos.</li>
+            <li><strong>Supresión:</strong> solicitar que borremos tus datos ("derecho al olvido").</li>
+            <li><strong>Oposición:</strong> oponerte a determinados tratamientos.</li>
+            <li><strong>Limitación:</strong> solicitar que restrinjamos el tratamiento.</li>
+            <li><strong>Portabilidad:</strong> recibir tus datos en formato electrónico.</li>
+        </ul>
+        <p>Para ejercer cualquier derecho, escríbenos a <a href="mailto:contacto@finanzaspersonales-es.com">contacto@finanzaspersonales-es.com</a>. También puedes presentar una reclamación ante la <strong>Agencia Española de Protección de Datos (AEPD)</strong> en <a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>.</p>
+
+        <h2>8. Cambios en esta política</h2>
+        <p>Podemos actualizar esta política de privacidad ocasionalmente. Te recomendamos revisarla periódicamente. La fecha de última actualización siempre aparece al inicio de esta página.</p>
+    </div>
+</div>
+
+<footer>
+    <p class="footer-copy">© 2026 Finanzas Personales España</p>
+    <div class="footer-links">
+        <a href="index.html">Calculadora</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="aviso-legal.html">Aviso Legal</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+    <p class="footer-disclaimer">Los cálculos son orientativos. Consulta con tu banco para condiciones exactas.</p>
+</footer>
+
+</body>
+</html>

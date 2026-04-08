@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Cookies | Finanzas Personales España</title>
+    <meta name="description" content="Política de cookies de Finanzas Personales España. Qué cookies usamos y cómo puedes gestionarlas.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://finanzaspersonales-es.github.io/mi-web/cookies.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a1a2e; --secondary: #0f3460; --accent: #e94560; --gold: #d4af37;
+            --text: #2d3436; --text-light: #636e72;
+            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Work Sans', sans-serif; color: var(--text); background: linear-gradient(to bottom, #ffffff 0%, #f1f3f4 100%); line-height: 1.6; }
+        .hero { background: var(--gradient); padding: 60px 20px 80px; position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+        .container { max-width: 860px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 1; }
+        h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 900; color: white; text-align: center; margin-bottom: 12px; }
+        .hero-sub { color: rgba(255,255,255,0.85); text-align: center; font-size: 1.05rem; }
+        .breadcrumb { text-align: center; margin-top: 16px; }
+        .breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb span { color: rgba(255,255,255,0.5); margin: 0 8px; }
+        .content-wrapper { background: white; border-radius: 24px; padding: 50px 60px; box-shadow: var(--shadow); margin: -40px auto 60px; }
+        .last-updated { display: inline-block; background: #f0f4ff; color: var(--secondary); font-size: 0.85rem; font-weight: 600; padding: 6px 14px; border-radius: 20px; margin-bottom: 32px; }
+        h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--primary); font-weight: 700; margin: 40px 0 14px; padding-left: 16px; border-left: 4px solid var(--accent); }
+        h2:first-of-type { margin-top: 10px; }
+        p { color: var(--text-light); margin-bottom: 14px; font-size: 0.98rem; }
+        ul { color: var(--text-light); padding-left: 22px; margin-bottom: 14px; font-size: 0.98rem; }
+        li { margin-bottom: 8px; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        strong { color: var(--text); }
+        .highlight-box { background: #f8f9ff; border: 1px solid #e0e7ff; border-radius: 12px; padding: 20px 24px; margin: 20px 0; }
+        .highlight-box p { margin: 0; }
+
+        /* Tabla de cookies */
+        .cookie-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.92rem; }
+        .cookie-table th { background: var(--gradient); color: white; padding: 12px 16px; text-align: left; font-weight: 600; }
+        .cookie-table th:first-child { border-radius: 10px 0 0 0; }
+        .cookie-table th:last-child { border-radius: 0 10px 0 0; }
+        .cookie-table td { padding: 12px 16px; border-bottom: 1px solid #e1e8ed; color: var(--text-light); vertical-align: top; }
+        .cookie-table tr:last-child td { border-bottom: none; }
+        .cookie-table tr:nth-child(even) td { background: #f9fafb; }
+        .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 0.78rem; font-weight: 600; }
+        .badge-required { background: #fde8ec; color: #c0392b; }
+        .badge-analytics { background: #e8f4fd; color: #1a6fa8; }
+        .badge-ads { background: #fef9e7; color: #a07800; }
+
+        nav.topnav { background: var(--primary); padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { font-family: 'Playfair Display', serif; color: white; font-weight: 700; font-size: 1.1rem; text-decoration: none; }
+        .nav-back { color: rgba(255,255,255,0.75); font-size: 0.9rem; text-decoration: none; transition: color 0.2s; }
+        .nav-back:hover { color: white; text-decoration: none; }
+        footer { background: var(--primary); color: white; padding: 40px 20px 30px; text-align: center; }
+        .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin: 16px 0; }
+        .footer-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.9rem; }
+        .footer-links a:hover { color: white; }
+        .footer-copy { font-size: 0.9rem; opacity: 0.7; }
+        .footer-disclaimer { font-size: 0.8rem; opacity: 0.5; margin-top: 12px; }
+        @media (max-width: 768px) { .content-wrapper { padding: 32px 24px; } .cookie-table { font-size: 0.82rem; } .cookie-table td, .cookie-table th { padding: 10px 10px; } }
+    </style>
+</head>
+<body>
+
+<nav class="topnav">
+    <a href="index.html" class="nav-logo">🏦 Finanzas Personales ES</a>
+    <a href="index.html" class="nav-back">← Volver al inicio</a>
+</nav>
+
+<div class="hero">
+    <div class="container">
+        <h1>Política de Cookies</h1>
+        <p class="hero-sub">Qué cookies usamos y cómo gestionarlas</p>
+        <div class="breadcrumb">
+            <a href="index.html">Inicio</a>
+            <span>/</span>
+            <span style="color:rgba(255,255,255,0.85)">Cookies</span>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="content-wrapper">
+        <span class="last-updated">📅 Última actualización: abril de 2026</span>
+
+        <div class="highlight-box">
+            <p>Este sitio usa cookies para mejorar tu experiencia y mostrar publicidad relevante. Puedes aceptarlas, rechazarlas o configurarlas en cualquier momento desde tu navegador.</p>
+        </div>
+
+        <h2>1. ¿Qué son las cookies?</h2>
+        <p>Las cookies son pequeños archivos de texto que los sitios web guardan en tu navegador cuando los visitas. Sirven para recordar tus preferencias, analizar cómo se usa el sitio y mostrar publicidad personalizada.</p>
+
+        <h2>2. Cookies que utilizamos</h2>
+        <table class="cookie-table">
+            <thead>
+                <tr>
+                    <th>Cookie</th>
+                    <th>Proveedor</th>
+                    <th>Finalidad</th>
+                    <th>Duración</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>_ga</strong></td>
+                    <td>Google Analytics</td>
+                    <td>Distingue usuarios únicos para estadísticas de visitas</td>
+                    <td>2 años</td>
+                    <td><span class="badge badge-analytics">Analítica</span></td>
+                </tr>
+                <tr>
+                    <td><strong>_ga_*</strong></td>
+                    <td>Google Analytics</td>
+                    <td>Mantiene el estado de la sesión de analítica</td>
+                    <td>2 años</td>
+                    <td><span class="badge badge-analytics">Analítica</span></td>
+                </tr>
+                <tr>
+                    <td><strong>_gid</strong></td>
+                    <td>Google Analytics</td>
+                    <td>Distingue usuarios para estadísticas del día</td>
+                    <td>24 horas</td>
+                    <td><span class="badge badge-analytics">Analítica</span></td>
+                </tr>
+                <tr>
+                    <td><strong>IDE</strong></td>
+                    <td>Google AdSense</td>
+                    <td>Muestra anuncios personalizados según intereses</td>
+                    <td>13 meses</td>
+                    <td><span class="badge badge-ads">Publicidad</span></td>
+                </tr>
+                <tr>
+                    <td><strong>DSID</strong></td>
+                    <td>Google AdSense</td>
+                    <td>Identifica a usuarios con sesión iniciada en Google</td>
+                    <td>2 semanas</td>
+                    <td><span class="badge badge-ads">Publicidad</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>3. Cómo gestionar o desactivar las cookies</h2>
+        <p>Puedes configurar tu navegador para bloquear o eliminar cookies en cualquier momento. Ten en cuenta que algunas funcionalidades del sitio podrían dejar de funcionar correctamente si desactivas ciertas cookies.</p>
+        <ul>
+            <li><strong>Chrome:</strong> Configuración → Privacidad y seguridad → Cookies</li>
+            <li><strong>Firefox:</strong> Opciones → Privacidad y seguridad → Cookies</li>
+            <li><strong>Safari:</strong> Preferencias → Privacidad → Cookies</li>
+            <li><strong>Edge:</strong> Configuración → Privacidad → Cookies</li>
+        </ul>
+        <p>También puedes optar por no participar en la publicidad personalizada de Google en <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a>.</p>
+
+        <h2>4. Más información</h2>
+        <p>Para más detalles sobre cómo tratamos tus datos personales, consulta nuestra <a href="privacidad.html">Política de Privacidad</a>. Si tienes cualquier duda, escríbenos a <a href="mailto:contacto@finanzaspersonales-es.com">contacto@finanzaspersonales-es.com</a>.</p>
+    </div>
+</div>
+
+<footer>
+    <p class="footer-copy">© 2026 Finanzas Personales España</p>
+    <div class="footer-links">
+        <a href="index.html">Calculadora</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="aviso-legal.html">Aviso Legal</a>
+        <a href="cookies.html">Cookies</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+    <p class="footer-disclaimer">Los cálculos son orientativos. Consulta con tu banco para condiciones exactas.</p>
+</footer>
+
+</body>
+</html>
